@@ -1,0 +1,14 @@
+{
+  "item.sanatorium.mithril": "Mithril Ingot",
+  "item.sanatorium.raw_mithril": "Raw Mithril",
+  "item.sanatorium.mithril_plate": "Mithril Plate",
+  "item.sanatorium.raw_monster_drumstick": "Raw Monster Meat",
+  "item.sanatorium.cooked_monster_drumstick": "Cooked Monster Meat",
+
+
+  "block.sanatorium.mithril_block":"Block of Mithril",
+  "block.sanatorium.mithril_ore": " Mithril Ore",
+
+
+  "creativetab.sanatoriummod": "Sanatorium Items"
+}
