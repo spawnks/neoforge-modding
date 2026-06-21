@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.55,
+  "ingredient": {
+    "item": "sanatorium:raw_monster_drumstick"
+  },
+  "result": {
+    "count": 1,
+    "id": "sanatorium:cooked_monster_drumstick"
+  }
+}

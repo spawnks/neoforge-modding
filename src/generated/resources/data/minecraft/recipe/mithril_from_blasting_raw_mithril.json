@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "group": "mithril",
+  "ingredient": {
+    "item": "sanatorium:raw_mithril"
+  },
+  "result": {
+    "count": 1,
+    "id": "sanatorium:mithril"
+  }
+}

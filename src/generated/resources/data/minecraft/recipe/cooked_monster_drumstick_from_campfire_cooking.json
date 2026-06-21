@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.55,
+  "ingredient": {
+    "item": "sanatorium:raw_monster_drumstick"
+  },
+  "result": {
+    "count": 1,
+    "id": "sanatorium:cooked_monster_drumstick"
+  }
+}
