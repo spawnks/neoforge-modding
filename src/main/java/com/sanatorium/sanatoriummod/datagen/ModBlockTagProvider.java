@@ -3,6 +3,7 @@ package com.sanatorium.sanatoriummod.datagen;
 import com.mojang.datafixers.types.templates.Tag;
 import com.sanatorium.sanatoriummod.SanatoriumMod;
 import com.sanatorium.sanatoriummod.block.Sanatoriumblocks;
+import com.sanatorium.sanatoriummod.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -22,11 +23,22 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider provider) {
        tag(BlockTags.MINEABLE_WITH_PICKAXE)
                .add(Sanatoriumblocks.MITHRIL_ORE.get())
-               .add(Sanatoriumblocks.MITHRIL_BLOCK.get());
+               .add(Sanatoriumblocks.MITHRIL_BLOCK.get())
+               .add(Sanatoriumblocks.INFECTED_DEEPSLATE.get());
+
 
        tag(BlockTags.NEEDS_DIAMOND_TOOL)
                .add(Sanatoriumblocks.MITHRIL_ORE.get())
                .add(Sanatoriumblocks.MITHRIL_BLOCK.get());
+
+        tag(ModTags.Blocks.NEEDS_MITHRIL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(ModTags.Blocks.INCORRECT_fOR_MITHRIL_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(ModTags.Blocks.NEEDS_MITHRIL_TOOL);
+
+
 
 
 

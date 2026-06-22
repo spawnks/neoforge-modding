@@ -5,8 +5,21 @@
   "item.sanatorium.raw_monster_drumstick": "Raw Monster Meat",
   "item.sanatorium.cooked_monster_drumstick": "Cooked Monster Meat",
 
+  "item.sanatorium.mithril_sword": "Mithril Sword",
+  "item.sanatorium.mithril_hoe": "Mithril Hoe",
+  "item.sanatorium.mithril_axe": "Mithril Axe",
+  "item.sanatorium.mithril_pickaxe": "Mithril Pickaxe",
+  "item.sanatorium.mithril_shovel": "Mithril Shovel",
+
+  "item.sanatorium.mithril_chestplate": "Mithril Chestplate",
+  "item.sanatorium.mithril_leggings": "Mithril Leggings",
+  "item.sanatorium.mithril_helmet": "Mithril Helmet",
+  "item.sanatorium.mithril_boots": "Mithril Boots",
+
+
   "block.sanatorium.mithril_block":"Block of Mithril",
   "block.sanatorium.mithril_ore": "Mithril Ore",
+  "block.sanatorium.infected_deepslate": "Infected Deepslate",
 
 
   "creativetab.sanatoriummod": "Sanatorium Items"

@@ -29,6 +29,17 @@ public class ModCreativeModeTabs {
                         output.accept(SanatoriumItems.MITHRIL_PLATE);
                         output.accept(SanatoriumItems.COOKED_MONSTER_DRUMSTICK);
                         output.accept(SanatoriumItems.RAW_MONSTER_DRUMSTICK);
+                        output.accept(Sanatoriumblocks.INFECTED_DEEPSLATE);
+                        output.accept(SanatoriumItems.MITHRIL_AXE);
+                        output.accept(SanatoriumItems.MITHRIL_HOE);
+                        output.accept(SanatoriumItems.MITHRIL_PICKAXE);
+                        output.accept(SanatoriumItems.MITHRIL_SWORD);
+                        output.accept(SanatoriumItems.MITHRIL_SHOVEL);
+                        output.accept(SanatoriumItems.MITHRIL_BOOTS);
+                        output.accept(SanatoriumItems.MITHRIL_CHESTPLATE);
+                        output.accept(SanatoriumItems.MITHRIL_LEGGINGS);
+                        output.accept(SanatoriumItems.MITHRIL_HELMET);
+
 
 
 

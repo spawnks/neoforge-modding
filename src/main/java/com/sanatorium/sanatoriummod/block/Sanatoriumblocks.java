@@ -39,6 +39,18 @@ public class Sanatoriumblocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> INFECTED_DEEPSLATE = registerBlock("infected_deepslate",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(8)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.DEEPSLATE)));
+
+
+
+
+
+
+
     private static <T extends Block> DeferredBlock <T> registerBlock (String name, Supplier <T> block) {
         DeferredBlock <T> toreturn = BLOCKS.register(name, block);
         registerBlockItem(name, toreturn);

@@ -1,6 +1,7 @@
 {
   "values": [
     "sanatorium:mithril_ore",
-    "sanatorium:mithril_block"
+    "sanatorium:mithril_block",
+    "sanatorium:infected_deepslate"
   ]
 }

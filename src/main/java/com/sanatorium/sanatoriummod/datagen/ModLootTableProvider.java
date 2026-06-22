@@ -21,6 +21,7 @@ public class ModLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         dropSelf(Sanatoriumblocks.MITHRIL_BLOCK.get());
+        dropSelf(Sanatoriumblocks.INFECTED_DEEPSLATE.get());
 
         add(Sanatoriumblocks.MITHRIL_ORE.get(),
                 block -> createOreDrop(Sanatoriumblocks.MITHRIL_ORE.get(), SanatoriumItems.RAW_MITHRIL.get()));

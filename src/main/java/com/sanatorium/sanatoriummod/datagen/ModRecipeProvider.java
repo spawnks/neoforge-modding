@@ -5,6 +5,7 @@ import com.sanatorium.sanatoriummod.items.SanatoriumItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.SmeltingRecipe;
 import net.minecraft.world.level.ItemLike;
@@ -49,6 +50,74 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("PP")
                 .define('P', SanatoriumItems.MITHRIL.get())
                 .unlockedBy("has_mithril", has(SanatoriumItems.MITHRIL)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, SanatoriumItems.MITHRIL_SWORD.get())
+                .pattern("M")
+                .pattern("M")
+                .pattern("W")
+                        .define('M', SanatoriumItems.MITHRIL_PLATE.get()).define('W', Items.STICK.asItem())
+                        .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, SanatoriumItems.MITHRIL_AXE.get())
+                .pattern("MM")
+                .pattern("WM")
+                .pattern("W ")
+                        .define('M', SanatoriumItems.MITHRIL_PLATE.get()).define('W',Items.STICK.asItem())
+                        .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, SanatoriumItems.MITHRIL_HOE.get())
+                .pattern("MM")
+                .pattern(" W")
+                .pattern(" W")
+                        .define('M', SanatoriumItems.MITHRIL_PLATE.get()).define('W',Items.STICK.asItem())
+                        .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, SanatoriumItems.MITHRIL_PICKAXE.get())
+                .pattern("MMM")
+                .pattern(" W ")
+                .pattern(" W ")
+                        .define('M', SanatoriumItems.MITHRIL_PLATE.get()).define('W',Items.STICK.asItem())
+                        .unlockedBy("has_mithil_plate",has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, SanatoriumItems.MITHRIL_SHOVEL.get())
+                .pattern("M")
+                .pattern("W")
+                .pattern("W")
+                        .define('M', SanatoriumItems.MITHRIL_PLATE.get()).define('W',Items.STICK.asItem())
+                        .unlockedBy("has_mithril_plate",has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, SanatoriumItems.MITHRIL_BOOTS.get())
+                .pattern("   ")
+                .pattern("P P")
+                .pattern("P P")
+                        .define('P', SanatoriumItems.MITHRIL_PLATE.get())
+                                .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, SanatoriumItems.MITHRIL_HELMET.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("   ")
+                        .define('P', SanatoriumItems.MITHRIL_PLATE.get())
+                                .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, SanatoriumItems.MITHRIL_LEGGINGS.get())
+                .pattern("PPP")
+                .pattern("P P")
+                .pattern("P P")
+                        .define('P', SanatoriumItems.MITHRIL_PLATE.get())
+                                .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, SanatoriumItems.MITHRIL_CHESTPLATE.get())
+                .pattern("P P")
+                .pattern("PPP")
+                .pattern("PPP")
+                        .define('P', SanatoriumItems.MITHRIL_PLATE.get())
+                                .unlockedBy("has_mithril_plate", has(SanatoriumItems.MITHRIL_PLATE)).save(recipeOutput);
+
+
+
+
 
 
 

@@ -17,6 +17,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
          blockWithItem(Sanatoriumblocks.MITHRIL_BLOCK);
           blockWithItem(Sanatoriumblocks.MITHRIL_ORE);
+          blockWithItem(Sanatoriumblocks.INFECTED_DEEPSLATE);
     }
 
 
